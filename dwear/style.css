@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins',sans-serif;
+}
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex; 
+}
+.banner .navbar
+{
+  position: fixed;
+  top:0;
+  right: 0;
+  background-color: #543715;
+  height: 75px;
+  width: 100%;
+  z-index: 1;
+}
+.banner img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0.74;
+z-index: -1;
+
+}
+.banner .navbar .nav{
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+ margin-right: 50px;
+
+}
+
+.banner .navbar .nav li{
+  display: inline;
+  padding: 20px;
+
+}
+li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+ li a:before
+{
+  content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #9A7B4F;
+z-index: -1;
+transition: 0.5s ease-in-out;
+}
+
+ li a:hover:before
+{
+  width: 100%;
+}
+.content  a
+{
+  position: relative;
+  display: inline-block;
+  top: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #231709;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+
+}
+.content  a:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #9A7B4F;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+
+}
+.content  a:hover:before
+{
+  width: 100%;
+}
+
+
+.banner .navbar .logo{
+  position: absolute;
+top: 0;
+left: 0;
+  height: 70px;
+  width: 11%;
+
+}
+.banner .content
+{ 
+  position: absolute;
+  top: 200px;
+  bottom: 100px;
+  left: 150px;
+  right: 100px;
+  max-width: 750px;
+  text-align: center;
+}
+.banner .content h1
+{
+  
+  color: #231709;
+  font-size: 60px;
+  font-weight: bold;
+}
+.banner .content p
+{
+  
+  color: #231709;
+  font-size: 18px;
+}
+
+
+.about
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.about .contentBx
+{
+
+  background: #DAA520;
+  padding: 100px;
+  width: 50%;
+  
+}
+.heading
+{
+  color: #231709;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.text
+{
+  color: #231709;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+ 
+.about .imgBx{
+  position: relative;
+  width: 50%;
+    display: flex;
+}
+.about .imgBx img
+{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.about .contentBx  a
+{
+  position: relative;
+  display: inline-block;
+  top: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #231709;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+  z-index: 1;
+
+}
+.about .contentBx  a:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #9A7B4F;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  }
+.about .contentBx  a:hover:before
+{
+  width: 100%;
+}
+
+.services
+{   
+  background: #CD853F;
+  padding: 100px;
+  text-align: center;
+
+
+}
+.services .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.services .container .serviceBx
+{
+  position: relative;
+  background: #F5DEB3;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 100px;
+ margin-top: 50px;
+}
+.services .container .serviceBx img
+{
+  max-width: 100px;
+}
+
+.services .container .serviceBx h2
+{
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #231709;
+}
+
